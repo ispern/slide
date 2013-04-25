@@ -1,4 +1,4 @@
-# Sencha Touch 
+# Introduction Sencha Touch 
 
 ---
 
