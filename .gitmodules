@@ -1,0 +1,6 @@
+[submodule "landslide-theme/mozilla-landslide-theme"]
+	path = landslide-theme/mozilla-landslide-theme
+	url = git://github.com/ametaireau/mozilla-landslide-theme.git
+[submodule "landslide-theme/simple"]
+	path = landslide-theme/simple
+	url = git://github.com/Kaljurand/landslide-themes.git
