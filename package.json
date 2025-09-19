@@ -1,0 +1,13 @@
+{
+  "name": "slide",
+  "version": "1.0.0",
+  "description": "slides for Github Pages",
+  "scripts": {
+    "build": "marp -I slides -o dist --theme-set themes --html",
+    "watch": "marp -I slides -o dist --watch --theme-set themes --html",
+    "serve": "marp -I slides -s --theme-set themes --html"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0"
+  }
+}
