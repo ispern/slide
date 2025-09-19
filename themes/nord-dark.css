@@ -1,0 +1,117 @@
+/* @theme nord-dark */
+/* Nord Dark Theme for Marp - Based on Nord Color Palette */
+/* https://www.nordtheme.com/ */
+
+@import 'default';
+@import 'nord-common';
+
+:root {
+  /* Polar Night - 背景色（ダーク） */
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+
+  /* Snow Storm - テキスト色（ダーク） */
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+}
+
+/* ダークテーマ固有のスタイル */
+section {
+  background-color: var(--nord0);
+  color: var(--nord4);
+}
+
+section.lead {
+  background: linear-gradient(135deg, var(--nord0) 0%, var(--nord1) 100%);
+}
+
+section.lead h1 {
+  color: var(--nord6);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+section.lead h2 {
+  color: var(--nord8);
+}
+
+/* 見出しの色 */
+h1 {
+  color: var(--nord8);
+}
+
+h2 {
+  color: var(--nord7);
+}
+
+h3 {
+  color: var(--nord9);
+}
+
+h4 {
+  color: var(--nord4);
+}
+
+/* リストの色 */
+ul, ol {
+  color: var(--nord5);
+}
+
+/* コードブロックの背景 */
+pre {
+  background-color: var(--nord1);
+  border: 1px solid var(--nord2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+code {
+  background-color: var(--nord1);
+  color: var(--nord6);
+}
+
+p code, li code {
+  background-color: var(--nord2);
+}
+
+/* テーブルの色 */
+th {
+  background-color: var(--nord2); /* より濃い背景色でコントラスト向上 */
+  color: var(--nord8);
+}
+
+td {
+  background-color: var(--nord1); /* セルにも背景色を追加 */
+  color: var(--nord5);
+}
+
+/* 引用の色 */
+blockquote {
+  color: var(--nord4);
+}
+
+/* 強調の色 */
+strong {
+  color: var(--nord6);
+}
+
+mark {
+  color: var(--nord6);
+}
+
+/* セクション番号の色 */
+section::after {
+  color: var(--nord3);
+}
+
+/* カードの背景 */
+.card {
+  background-color: var(--nord1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* フッターの色 */
+footer {
+  color: var(--nord3);
+}

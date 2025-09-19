@@ -1,0 +1,117 @@
+/* @theme nord-light */
+/* Nord Light Theme for Marp - Based on Nord Color Palette */
+/* https://www.nordtheme.com/ */
+
+@import 'default';
+@import 'nord-common';
+
+:root {
+  /* Snow Storm - 背景色（ライト） */
+  --nord0: #eceff4;
+  --nord1: #e5e9f0;
+  --nord2: #d8dee9;
+  --nord3: #4c566a;
+
+  /* Polar Night - テキスト色（ライト） - より濃い色でコントラスト向上 */
+  --nord4: #2e3440; /* メインテキスト - 最も濃い色 */
+  --nord5: #3b4252; /* サブテキスト */
+  --nord6: #434c5e; /* 最も薄いテキスト */
+}
+
+/* ライトテーマ固有のスタイル */
+section {
+  background-color: var(--nord0);
+  color: var(--nord4);
+}
+
+section.lead {
+  background: linear-gradient(135deg, var(--nord0) 0%, var(--nord1) 100%);
+}
+
+section.lead h1 {
+  color: var(--nord6);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+section.lead h2 {
+  color: var(--nord4);
+}
+
+/* 見出しの色 - Frostを使用 */
+h1 {
+  color: var(--nord10); /* Frost - 深い青 */
+}
+
+h2 {
+  color: var(--nord9); /* Frost - 青 */
+}
+
+h3 {
+  color: var(--nord8); /* Frost - 明るい青 */
+}
+
+h4 {
+  color: var(--nord7); /* Frost - 緑がかった青 */
+}
+
+/* リストの色 */
+ul, ol {
+  color: var(--nord4); /* Polar Night - 基本テキスト色 */
+}
+
+/* コードブロックの背景 */
+pre {
+  background-color: var(--nord1);
+  border: 1px solid var(--nord2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+code {
+  background-color: var(--nord1);
+  color: var(--nord10); /* Frost - 深い青 */
+}
+
+p code, li code {
+  color: var(--nord10); /* Frost - 深い青 */
+  background-color: var(--nord2);
+}
+
+/* テーブルの色 */
+th {
+  background-color: var(--nord1);
+  color: var(--nord10); /* Frost - 深い青 */
+}
+
+td {
+  color: var(--nord4); /* Polar Night - 基本テキスト色 */
+}
+
+/* 引用の色 */
+blockquote {
+  color: var(--nord4);
+}
+
+/* 強調の色 */
+strong {
+  color: var(--nord10); /* Frost - 深い青 */
+}
+
+mark {
+  color: var(--nord4); /* Polar Night - 基本テキスト色 */
+}
+
+/* セクション番号の色 */
+section::after {
+  color: var(--nord3);
+}
+
+/* カードの背景 */
+.card {
+  background-color: var(--nord1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* フッターの色 */
+footer {
+  color: var(--nord3);
+}
