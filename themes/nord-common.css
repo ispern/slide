@@ -249,14 +249,58 @@ mark {
   border-radius: 3px;
 }
 
-/* セクション番号 */
+/* セクション番号のみ */
 section::after {
   content: attr(data-marpit-pagination);
   position: absolute;
   bottom: 20px;
   right: 30px;
-  font-size: 1rem; /* より大きく */
+  font-size: 0.8rem;
   font-weight: 600;
+}
+
+/* Marpのfooterプロパティ用のスタイル */
+section[data-marpit-pagination]::after {
+  content: attr(data-marpit-pagination);
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Marpのfooterプロパティで挿入されるフッター */
+section[data-marpit-footer] {
+  position: relative;
+}
+
+section[data-marpit-footer]::before {
+  content: attr(data-marpit-footer);
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--nord3);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--nord8);
+  z-index: 10;
+}
+
+/* Markdownで定義されたフッター用のスタイル */
+footer {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--nord3);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--nord8);
 }
 
 /* プログレスバー */
