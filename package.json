@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "slides for Github Pages",
   "scripts": {
-    "build": "marp -I slides -o dist --theme-set themes --html",
+    "build": "marp -I slides -o dist --theme-set themes --html && cp -r slides/*/attachments dist/*/ 2>/dev/null || true",
     "watch": "marp -I slides -o dist --watch --theme-set themes --html",
     "serve": "marp -I slides -s --theme-set themes --html"
   },
