@@ -14,24 +14,32 @@
   --nord10: #5e81ac;
 
   /* Aurora - アクセントカラー（共通） */
-  --nord11: #bf616a; /* Red */
-  --nord12: #d08770; /* Orange */
-  --nord13: #ebcb8b; /* Yellow */
-  --nord14: #a3be8c; /* Green */
-  --nord15: #b48ead; /* Purple */
+  --nord11: #bf616a;
+  /* Red */
+  --nord12: #d08770;
+  /* Orange */
+  --nord13: #ebcb8b;
+  /* Yellow */
+  --nord14: #a3be8c;
+  /* Green */
+  --nord15: #b48ead;
+  /* Purple */
 }
 
 /* 基本セクションスタイル */
 section {
   font-family: 'BIZ UDPGothic', 'BIZ UDゴシック', 'JetBrains Mono', sans-serif;
-  font-size: 22px; /* デフォルトフォントサイズを大きく */
+  font-size: 22px;
+  /* デフォルトフォントサイズを大きく */
   font-weight: 500;
   padding: 40px 40px 40px 40px;
-  font-feature-settings: "palt" 1; /* プロポーショナルメトリクス */
+  font-feature-settings: "palt" 1;
+  /* プロポーショナルメトリクス */
 
   /* Marpのdefaultテーマの中央寄せを上寄せに変更 */
   display: block !important;
-  place-content: start !important; /* centerからstartに変更 */
+  place-content: start !important;
+  /* centerからstartに変更 */
 }
 
 /* タイトルスライド */
@@ -47,41 +55,48 @@ section.lead {
 }
 
 section.lead h1 {
-  font-size: 2rem; /* より大きく */
+  font-size: 2rem;
+  /* より大きく */
   font-weight: 700;
   margin-bottom: 0.3em;
 }
 
 section.lead h2 {
-  font-size: 1.6rem; /* より大きく */
+  font-size: 1.6rem;
+  /* より大きく */
   font-weight: 500;
 }
 
 /* 見出しスタイル */
 h1 {
-  font-size: 2rem; /* より大きく */
+  font-size: 2rem;
+  /* より大きく */
   border-bottom: 3px solid var(--nord10);
   padding-bottom: 0.2em;
   margin-bottom: 0.5em;
 }
 
 h2 {
-  font-size: 1.6rem; /* より大きく */
+  font-size: 1.6rem;
+  /* より大きく */
   margin-top: 0.5em;
 }
 
 h3 {
-  font-size: 1.3rem; /* より大きく */
+  font-size: 1.3rem;
+  /* より大きく */
   margin-top: 0.5em;
 }
 
 h4 {
-  font-size: 1.2rem; /* より大きく */
+  font-size: 1.2rem;
+  /* より大きく */
   font-weight: 600;
 }
 
 /* リストスタイル */
-ul, ol {
+ul,
+ol {
   line-height: 1.8;
 }
 
@@ -100,6 +115,12 @@ a {
   text-decoration: none;
   border-bottom: 1px solid var(--nord8);
   transition: all 0.3s ease;
+}
+
+/* 画像スタイル */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 a:hover {
@@ -123,66 +144,223 @@ pre code {
 }
 
 /* 言語別のハイライト色 */
-.hljs-keyword { color: var(--nord9); font-weight: bold; }
-.hljs-string { color: var(--nord14); }
-.hljs-number { color: var(--nord15); }
-.hljs-comment { color: var(--nord3); font-style: italic; }
-.hljs-function { color: var(--nord8); }
-.hljs-variable { color: var(--nord4); }
-.hljs-type { color: var(--nord7); }
-.hljs-built_in { color: var(--nord10); }
-.hljs-title { color: var(--nord8); }
-.hljs-params { color: var(--nord4); }
-.hljs-attr { color: var(--nord12); }
-.hljs-tag { color: var(--nord11); }
-.hljs-attribute { color: var(--nord13); }
-.hljs-value { color: var(--nord14); }
+.hljs-keyword {
+  color: var(--nord9);
+  font-weight: bold;
+}
+
+.hljs-string {
+  color: var(--nord14);
+}
+
+.hljs-number {
+  color: var(--nord15);
+}
+
+.hljs-comment {
+  color: var(--nord3);
+  font-style: italic;
+}
+
+.hljs-function {
+  color: var(--nord8);
+}
+
+.hljs-variable {
+  color: var(--nord4);
+}
+
+.hljs-type {
+  color: var(--nord7);
+}
+
+.hljs-built_in {
+  color: var(--nord10);
+}
+
+.hljs-title {
+  color: var(--nord8);
+}
+
+.hljs-params {
+  color: var(--nord4);
+}
+
+.hljs-attr {
+  color: var(--nord12);
+}
+
+.hljs-tag {
+  color: var(--nord11);
+}
+
+.hljs-attribute {
+  color: var(--nord13);
+}
+
+.hljs-value {
+  color: var(--nord14);
+}
 
 /* Markdownシンタックスハイライト */
-.hljs-section { color: var(--nord8); font-weight: bold; } /* 見出し */
-.hljs-strong { color: var(--nord6); font-weight: bold; } /* 太字 */
-.hljs-emphasis { color: var(--nord13); font-style: italic; } /* 斜体 */
-.hljs-quote { color: var(--nord3); font-style: italic; } /* 引用 */
-.hljs-bullet { color: var(--nord8); } /* リストマーカー */
-.hljs-link { color: var(--nord8); text-decoration: underline; } /* リンク */
-.hljs-link:hover { color: var(--nord7); } /* リンクホバー */
-.hljs-code { color: var(--nord13); background-color: var(--nord2); } /* インラインコード */
-.hljs-meta { color: var(--nord3); } /* メタ情報 */
-.hljs-addition { color: var(--nord14); background-color: rgba(163, 190, 140, 0.1); } /* 追加 */
-.hljs-deletion { color: var(--nord11); background-color: rgba(191, 97, 106, 0.1); } /* 削除 */
-.hljs-change { color: var(--nord13); background-color: rgba(235, 203, 139, 0.1); } /* 変更 */
+.hljs-section {
+  color: var(--nord8);
+  font-weight: bold;
+}
+
+/* 見出し */
+.hljs-strong {
+  color: var(--nord6);
+  font-weight: bold;
+}
+
+/* 太字 */
+.hljs-emphasis {
+  color: var(--nord13);
+  font-style: italic;
+}
+
+/* 斜体 */
+.hljs-quote {
+  color: var(--nord3);
+  font-style: italic;
+}
+
+/* 引用 */
+.hljs-bullet {
+  color: var(--nord8);
+}
+
+/* リストマーカー */
+.hljs-link {
+  color: var(--nord8);
+  text-decoration: underline;
+}
+
+/* リンク */
+.hljs-link:hover {
+  color: var(--nord7);
+}
+
+/* リンクホバー */
+.hljs-code {
+  color: var(--nord13);
+  background-color: var(--nord2);
+}
+
+/* インラインコード */
+.hljs-meta {
+  color: var(--nord3);
+}
+
+/* メタ情報 */
+.hljs-addition {
+  color: var(--nord14);
+  background-color: rgba(163, 190, 140, 0.1);
+}
+
+/* 追加 */
+.hljs-deletion {
+  color: var(--nord11);
+  background-color: rgba(191, 97, 106, 0.1);
+}
+
+/* 削除 */
+.hljs-change {
+  color: var(--nord13);
+  background-color: rgba(235, 203, 139, 0.1);
+}
+
+/* 変更 */
 
 /* Markdownコードブロック内の要素 */
-.hljs-markdown .hljs-section { color: var(--nord8); font-weight: bold; } /* # 見出し */
-.hljs-markdown .hljs-strong { color: var(--nord6); font-weight: bold; } /* **太字** */
-.hljs-markdown .hljs-emphasis { color: var(--nord13); font-style: italic; } /* *斜体* */
-.hljs-markdown .hljs-quote { color: var(--nord3); font-style: italic; } /* > 引用 */
-.hljs-markdown .hljs-bullet { color: var(--nord8); } /* - リスト */
-.hljs-markdown .hljs-link { color: var(--nord8); text-decoration: underline; } /* [リンク](url) */
-.hljs-markdown .hljs-code { color: var(--nord13); background-color: var(--nord2); } /* `コード` */
-.hljs-markdown .hljs-meta { color: var(--nord3); } /* メタ情報 */
-.hljs-markdown .hljs-addition { color: var(--nord14); background-color: rgba(163, 190, 140, 0.1); } /* + 追加 */
-.hljs-markdown .hljs-deletion { color: var(--nord11); background-color: rgba(191, 97, 106, 0.1); } /* - 削除 */
-.hljs-markdown .hljs-change { color: var(--nord13); background-color: rgba(235, 203, 139, 0.1); } /* ~ 変更 */
+.hljs-markdown .hljs-section {
+  color: var(--nord8);
+  font-weight: bold;
+}
+
+/* # 見出し */
+.hljs-markdown .hljs-strong {
+  color: var(--nord6);
+  font-weight: bold;
+}
+
+/* **太字** */
+.hljs-markdown .hljs-emphasis {
+  color: var(--nord13);
+  font-style: italic;
+}
+
+/* *斜体* */
+.hljs-markdown .hljs-quote {
+  color: var(--nord3);
+  font-style: italic;
+}
+
+/* > 引用 */
+.hljs-markdown .hljs-bullet {
+  color: var(--nord8);
+}
+
+/* - リスト */
+.hljs-markdown .hljs-link {
+  color: var(--nord8);
+  text-decoration: underline;
+}
+
+/* [リンク](url) */
+.hljs-markdown .hljs-code {
+  color: var(--nord13);
+  background-color: var(--nord2);
+}
+
+/* `コード` */
+.hljs-markdown .hljs-meta {
+  color: var(--nord3);
+}
+
+/* メタ情報 */
+.hljs-markdown .hljs-addition {
+  color: var(--nord14);
+  background-color: rgba(163, 190, 140, 0.1);
+}
+
+/* + 追加 */
+.hljs-markdown .hljs-deletion {
+  color: var(--nord11);
+  background-color: rgba(191, 97, 106, 0.1);
+}
+
+/* - 削除 */
+.hljs-markdown .hljs-change {
+  color: var(--nord13);
+  background-color: rgba(235, 203, 139, 0.1);
+}
+
+/* ~ 変更 */
 
 code {
   padding: 0.2em 0.4em;
   border-radius: 4px;
-  font-size: 1rem; /* 統一サイズ */
+  font-size: 1rem;
+  /* 統一サイズ */
   line-height: 1.5;
 }
 
 pre code {
   background-color: transparent;
   padding: 0;
-  font-size: 1rem; /* 統一サイズ */
+  font-size: 1rem;
+  /* 統一サイズ */
   line-height: 1.5;
 }
 
 /* インラインコード */
-p code, li code {
+p code,
+li code {
   color: var(--nord13);
-  font-size: 1rem; /* 統一サイズ */
+  font-size: 1rem;
+  /* 統一サイズ */
 }
 
 /* テーブルスタイル */
@@ -217,7 +395,8 @@ tr:last-child td {
   border-bottom: none;
 }
 
-td:last-child, th:last-child {
+td:last-child,
+th:last-child {
   border-right: none;
 }
 
@@ -323,15 +502,30 @@ section::before {
   font-weight: bold;
 }
 
-.accent-red { color: var(--nord11); }
-.accent-orange { color: var(--nord12); }
-.accent-yellow { color: var(--nord13); }
-.accent-green { color: var(--nord14); }
-.accent-purple { color: var(--nord15); }
+.accent-red {
+  color: var(--nord11);
+}
+
+.accent-orange {
+  color: var(--nord12);
+}
+
+.accent-yellow {
+  color: var(--nord13);
+}
+
+.accent-green {
+  color: var(--nord14);
+}
+
+.accent-purple {
+  color: var(--nord15);
+}
 
 /* アイコン調整 */
 .emoji {
-  font-size: 1.4rem; /* より大きく */
+  font-size: 1.4rem;
+  /* より大きく */
   vertical-align: middle;
   margin: 0 0.1em;
 }
@@ -354,8 +548,15 @@ footer {
 
 /* アニメーション */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-in {
